@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Request Form</title>
+    <style>
+        body {
+            background-color: #00d1d1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container input[type="checkbox"],
+        .form-container input[type="radio"] {
+            margin-right: 10px;
+        }
+        .form-container .form-group {
+            margin-bottom: 15px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Software Request</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="employee-id">Employee ID *</label>
+                <input type="number" id="employee-id" name="employee-id" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile No / Extn.No</label>
+                <input type="text" id="mobile" name="mobile">
+            </div>
+            <div class="form-group">
+                <label>Which software do you require? *</label>
+                <input type="checkbox" id="software-a" name="software" value="A">
+                <label for="software-a">Software A</label><br>
+                <input type="checkbox" id="software-b" name="software" value="B">
+                <label for="software-b">Software B</label><br>
+                <input type="checkbox" id="software-c" name="software" value="C">
+                <label for="software-c">Software C</label>
+            </div>
+            <div class="form-group">
+                <label>How urgently do you need it? *</label>
+                <input type="radio" id="asap" name="urgency" value="asap" required>
+                <label for="asap">As soon as possible</label><br>
+                <input type="radio" id="2-3-weeks" name="urgency" value="2-3-weeks">
+                <label for="2-3-weeks">Within 2 to 3 weeks</label><br>
+                <input type="radio" id="no-hurry" name="urgency" value="no-hurry">
+                <label for="no-hurry">I'm in no hurry</label>
+            </div>
+            <button type="submit">Request</button>
+        </form>
+    </div>
+</body>
+</html>
