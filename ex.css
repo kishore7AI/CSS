@@ -1,0 +1,10 @@
+<style>
+.container{
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px ;
+        border-radius: 5px;
+        background-color:rgb(126, 208, 27);
+}
+</style>
